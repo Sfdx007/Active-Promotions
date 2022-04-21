@@ -1,0 +1,16 @@
+<template>
+<!--Select the checkbox if Active Promotions for All Account Types to be displayed
+if not only Active Promotions of type Customer-Direct are displayed-->
+    <div class="slds-box">
+        <lightning-input type="checkbox" label="Display All Account Types" name="Type" 
+         onchange={handleChange} checked>    
+        </lightning-input>
+        </div>
+<!--Map to display the geolocations of Active Promotions-->
+    <lightning-map 
+        map-markers={mapMarkers}
+        markers-title={markersTitle}
+        zoom-level={zoomLevel}
+        list-view={listView} name="Active_Promotions"> 
+    </lightning-map> 
+</template>
